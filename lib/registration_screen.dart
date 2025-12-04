@@ -97,9 +97,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             TextField(
               controller: lastDonationController,
               decoration: InputDecoration(
-                labelText: "Last Donation Date",
-                hintText: "Tap to select date",
+                labelText: "Last Donation Date (Optional)",
+                hintText: "Leave empty if you've never donated",
                 suffixIcon: Icon(Icons.calendar_today), // Calendar icon
+                helperText:
+                    "Leave this field empty if you have never donated blood before",
+                helperMaxLines: 2,
               ),
               readOnly: true, // Prevent manual typing, only allow date picker
               // When field is tapped, show date picker
