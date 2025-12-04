@@ -151,9 +151,16 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
                 minimumSize: Size(double.infinity, 50), // Full width
               ),
-              child: Text("Submit"),
+              child: Text(
+                "Submit",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
 
               onPressed: () {
                 // Validate all required fields are filled

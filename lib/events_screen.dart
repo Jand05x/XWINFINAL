@@ -8,9 +8,9 @@ class EventsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Top app bar
+      // Top app bar - CHANGED FROM BLUE TO RED
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.red, // Changed from Colors.blue
         title: Text(
           "Donation Events",
           style: TextStyle(fontWeight: FontWeight.bold),
@@ -81,10 +81,14 @@ class EventsScreen extends StatelessWidget {
 
             SizedBox(height: 12),
 
-            // Event date and time
+            // Event date and time - CHANGED ICON COLOR FROM BLUE TO RED
             Row(
               children: [
-                Icon(Icons.calendar_today, color: Colors.blue, size: 16),
+                Icon(
+                  Icons.calendar_today,
+                  color: Colors.red,
+                  size: 16,
+                ), // Changed from Colors.blue
                 SizedBox(width: 8),
                 Text(date, style: TextStyle(color: Colors.grey[700])),
               ],
@@ -125,12 +129,12 @@ class EventsScreen extends StatelessWidget {
 
             SizedBox(height: 12),
 
-            // RSVP button to register for event
+            // RSVP button to register for event - CHANGED BUTTON COLOR FROM BLUE TO RED
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: Colors.red, // Changed from Colors.blue
                   elevation: 2,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),

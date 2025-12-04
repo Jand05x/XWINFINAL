@@ -42,12 +42,19 @@ class WelcomeScreen extends StatelessWidget {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red, // Button color
+                foregroundColor: Colors.white,
                 minimumSize: Size(
                   double.infinity,
                   50,
                 ), // Full width, 50px height
               ),
-              child: Text("Sign Up"),
+              child: Text(
+                "Sign Up",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
               onPressed: () {
                 // Navigate to registration screen
                 Navigator.pushNamed(context, "/register");
@@ -59,8 +66,16 @@ class WelcomeScreen extends StatelessWidget {
             OutlinedButton(
               style: OutlinedButton.styleFrom(
                 minimumSize: Size(double.infinity, 50), // Full width
+                foregroundColor: Colors.red,
+                side: BorderSide(color: Colors.red),
               ),
-              child: Text("Login"),
+              child: Text(
+                "Login",
+                style: TextStyle(
+                  color: Colors.red,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               onPressed: () {
                 // Navigate to login screen
                 Navigator.pushNamed(context, "/login");

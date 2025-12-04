@@ -11,7 +11,7 @@ class AdminDashboardScreen extends StatelessWidget {
       // Top app bar
       appBar: AppBar(
         title: Text("Admin Dashboard"),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.red,
       ),
 
       body: Padding(
@@ -34,7 +34,7 @@ class AdminDashboardScreen extends StatelessWidget {
                   child: _statCard(
                     "12",
                     "Hospitals",
-                    Colors.blue,
+                    Colors.red,
                     Icons.local_hospital,
                   ),
                 ),
@@ -90,7 +90,7 @@ class AdminDashboardScreen extends StatelessWidget {
                             trailing: ElevatedButton(
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.green,
+                                backgroundColor: Colors.grey[600],
                               ),
                               child: Text("Approve"),
                             ),
@@ -113,7 +113,7 @@ class AdminDashboardScreen extends StatelessWidget {
                             trailing: ElevatedButton(
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.green,
+                                backgroundColor: Colors.grey[600],
                               ),
                               child: Text("Approve"),
                             ),
@@ -356,7 +356,7 @@ class AdminDashboardScreen extends StatelessWidget {
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: color,
+          backgroundColor: Colors.grey[600],
           foregroundColor: Colors.white,
           elevation: 4,
           shape: RoundedRectangleBorder(

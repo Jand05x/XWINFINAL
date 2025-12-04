@@ -14,7 +14,7 @@ class HospitalDashboardScreen extends StatelessWidget {
       // Top app bar
       appBar: AppBar(
         title: Text("Hospital Dashboard"),
-        backgroundColor: Colors.amber[700],
+        backgroundColor: Colors.red,
       ),
 
       body: Padding(
@@ -41,7 +41,7 @@ class HospitalDashboardScreen extends StatelessWidget {
                   child: _buildStatCard(
                     "3",
                     "Events Planned",
-                    Colors.blue,
+                    Colors.red,
                     Icons.event,
                   ),
                 ),
@@ -193,7 +193,7 @@ class HospitalDashboardScreen extends StatelessWidget {
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           ),
           style: ElevatedButton.styleFrom(
-            backgroundColor: color,
+            backgroundColor: Colors.grey[600],
             foregroundColor: Colors.white,
             elevation: 4,
             shape: RoundedRectangleBorder(

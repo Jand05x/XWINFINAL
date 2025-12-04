@@ -21,7 +21,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       // Top app bar
-      appBar: AppBar(title: Text("Create Event"), backgroundColor: Colors.blue),
+      appBar: AppBar(title: Text("Create Event"), backgroundColor: Colors.red),
 
       body: SingleChildScrollView(
         // Makes form scrollable
@@ -45,7 +45,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               decoration: InputDecoration(
                 labelText: "Event Title",
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.event, color: Colors.blue),
+                prefixIcon: Icon(Icons.event, color: Colors.red),
                 hintText: "e.g., Community Blood Drive",
               ),
             ),
@@ -58,7 +58,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               decoration: InputDecoration(
                 labelText: "Location",
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.location_on, color: Colors.blue),
+                prefixIcon: Icon(Icons.location_on, color: Colors.red),
                 hintText: "e.g., Duhok Medical Center",
               ),
             ),
@@ -71,7 +71,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               decoration: InputDecoration(
                 labelText: "Event Date",
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.calendar_today, color: Colors.blue),
+                prefixIcon: Icon(Icons.calendar_today, color: Colors.red),
                 hintText: "Tap to select date",
               ),
               readOnly: true, // Prevent manual typing
@@ -101,7 +101,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               decoration: InputDecoration(
                 labelText: "Event Time",
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.access_time, color: Colors.blue),
+                prefixIcon: Icon(Icons.access_time, color: Colors.red),
                 hintText: "Tap to select time",
               ),
               readOnly: true, // Prevent manual typing
@@ -143,7 +143,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               height: 50,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: Colors.red,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),

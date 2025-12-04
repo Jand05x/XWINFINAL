@@ -136,10 +136,17 @@ class _LoginScreenState extends State<LoginScreen> {
 
               // Link to registration screen
               TextButton(
+                style: TextButton.styleFrom(foregroundColor: Colors.red),
                 onPressed: () {
                   Navigator.pushNamed(context, '/register');
                 },
-                child: Text("Don't have an account? Sign Up"),
+                child: Text(
+                  "Don't have an account? Sign Up",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red,
+                  ),
+                ),
               ),
             ],
           ),
